@@ -1,12 +1,19 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
 
 :root {
-    --branco: white;
-    --cor-de-fundo: #00162E;
-    --fundo-senha: #00244D;
-    --fundo-texto: #001E40;
-    --borda: #0075FF;
+    /* Novas cores */
+    --branco: black; /* Mudando para preto para texto principal */
+    --cor-de-fundo: #E0F2F7; /* Azul clarinho, quase branco */
+    --fundo-senha: #B2EBF2; /* Azul um pouco mais escuro para o fundo da senha */
+    --fundo-texto: #81D4FA; /* Azul médio para os parâmetros e botões */
+    --borda: #01579B; /* Azul escuro e vibrante para as bordas */
+
+    /* Cores das barras de força (ajustadas para harmonizar) */
+    --fraca: #EF5350; /* Vermelho mais suave */
+    --media: #FFCA28; /* Amarelo */
+    --forte: #4CAF50; /* Verde */
+
+    /* Fontes (mantidas as mesmas, mas você pode mudar aqui se quiser outras) */
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
@@ -16,7 +23,7 @@
 }
 
 body {
-    color: var(--branco);
+    color: var(--branco); /* Agora o texto será preto */
     background-color: var(--cor-de-fundo);
     font-family: var(--roboto);
 }
@@ -45,7 +52,7 @@ body {
 #campo-senha {
     background-color: var(--fundo-senha);
     border: none;
-    color: var(--branco);
+    color: var(--branco); /* O texto da senha continuará preto */
     font-family: var(--roboto-mono);
     font-size: 40px;
     width: 70%;
@@ -94,7 +101,7 @@ body {
 
 .parametro-senha__botao {
     background-color: var(--fundo-texto);
-    color: var(--branco);
+    color: var(--branco); /* Texto do botão será preto */
     border: 2px solid var(--borda);
     padding: 24px;
     font-size: 24px;
@@ -133,16 +140,16 @@ label {
 
 .fraca {
     width: 25%;
-    background-color: #E71B32;
+    background-color: var(--fraca); /* Usando a nova variável */
 }
 
 .media {
-    background-color: #FAF408;
+    background-color: var(--media); /* Usando a nova variável */
     width: 50%;
 }
 
 .forte {
-    background-color: #00FF85;
+    background-color: var(--forte); /* Usando a nova variável */
     width: 100%;
 }
 
@@ -150,7 +157,6 @@ label {
     display: flex;
     justify-content: space-between;
 }
-
 
 @media screen and (min-width: 768px) {
     .parametro-coluna__senha {
