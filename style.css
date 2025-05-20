@@ -2,19 +2,19 @@
 
 :root {
     /* Novas cores */
-    --branco: black; /* Mudando para preto para texto principal */
-    --cor-de-fundo: #E0F2F7; /* Azul clarinho, quase branco */
-    --fundo-senha: #B2EBF2; /* Azul um pouco mais escuro para o fundo da senha */
-    --fundo-texto: #81D4FA; /* Azul médio para os parâmetros e botões */
-    --borda: #01579B; /* Azul escuro e vibrante para as bordas */
+    --branco: black;
+    --cor-de-fundo: #E0F2F7;
+    --fundo-senha: #B2EBF2;
+    --fundo-texto: #81D4FA;
+    --borda: #01579B;
 
-    /* Cores das barras de força (ajustadas para harmonizar) */
-    --fraca: #EF5350; /* Vermelho mais suave */
-    --media: #FFCA28; /* Amarelo */
-    --forte: #4CAF50; /* Verde */
+    /* Cores das barras de força */
+    --fraca: #EF5350;
+    --media: #FFCA28;
+    --forte: #4CAF50;
 
-    /* Fontes (mantidas as mesmas, mas você pode mudar aqui se quiser outras) */
-    --roboto: 'Roboto', sans-serif;
+    /* Fonte Comic Sans MS */
+    --comic-sans: "Comic Sans MS", "Comic Sans", cursive; /* Adicionando Comic Sans MS */
     --roboto-mono: 'Roboto Mono', monospace;
 }
 
@@ -23,17 +23,18 @@
 }
 
 body {
-    color: var(--branco); /* Agora o texto será preto */
+    color: var(--branco);
     background-color: var(--cor-de-fundo);
-    font-family: var(--roboto);
+    font-family: var(--comic-sans); /* Usando Comic Sans no corpo */
 }
 
 .titulo-principal {
-    font-family: var(--roboto-mono);
+    font-family: var(--comic-sans); /* Usando Comic Sans nos títulos principais */
     font-size: 32px;
 }
 
 .titulo-secundario {
+    font-family: var(--comic-sans); /* Usando Comic Sans nos títulos secundários */
     font-size: 24px;
 }
 
@@ -52,8 +53,8 @@ body {
 #campo-senha {
     background-color: var(--fundo-senha);
     border: none;
-    color: var(--branco); /* O texto da senha continuará preto */
-    font-family: var(--roboto-mono);
+    color: var(--branco);
+    font-family: var(--roboto-mono); /* Mantendo Roboto Mono para o campo de senha */
     font-size: 40px;
     width: 70%;
 }
@@ -75,11 +76,12 @@ body {
 }
 
 .parametro-titulo {
-    font-family: var(--roboto-mono);
+    font-family: var(--comic-sans); /* Usando Comic Sans nos títulos dos parâmetros */
     font-size: 28px;
 }
 
 .parametro-senha__titulo {
+    font-family: var(--comic-sans); /* Usando Comic Sans nos títulos de senha dos parâmetros */
     font-size: 24px;
 }
 
@@ -101,9 +103,10 @@ body {
 
 .parametro-senha__botao {
     background-color: var(--fundo-texto);
-    color: var(--branco); /* Texto do botão será preto */
+    color: var(--branco);
     border: 2px solid var(--borda);
     padding: 24px;
+    font-family: var(--comic-sans); /* Usando Comic Sans nos botões */
     font-size: 24px;
     cursor: pointer;
 }
@@ -113,10 +116,12 @@ body {
     border-top: 2px solid var(--borda);
     border-bottom: 2px solid var(--borda);
     margin: 0;
+    font-family: var(--comic-sans); /* Usando Comic Sans no texto dos parâmetros */
     font-size: 24px;
 }
 
 label {
+    font-family: var(--comic-sans); /* Usando Comic Sans nas labels */
     font-size: 20px;
 }
 
@@ -140,16 +145,16 @@ label {
 
 .fraca {
     width: 25%;
-    background-color: var(--fraca); /* Usando a nova variável */
+    background-color: var(--fraca);
 }
 
 .media {
-    background-color: var(--media); /* Usando a nova variável */
+    background-color: var(--media);
     width: 50%;
 }
 
 .forte {
-    background-color: var(--forte); /* Usando a nova variável */
+    background-color: var(--forte);
     width: 100%;
 }
 
